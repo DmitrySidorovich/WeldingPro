@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="data:;base64,=">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welding Calculator</title>
+</head>
+
+<body>
+  <div class="container">
+    <label for="migOrMag">Тип сварки</label>
+    <select name="migOrMag" id="migOrMag">
+      <option value="option1">Mig</option>
+      <option value="option2">Mag</option>
+    </select>
+    <label for="tubeD">Диаметр трубы</label>
+    <input type="number" name="tubeD" id="tubeD" value="100" min="0" step="5">
+    <label for="shovNo">Количество швов</label>
+    <input type="number" name="shovNo" id="shovNo" value="1" min="0">
+    <p id="result"></p>
+    <button>Рассчитать</button>
+  </div>
+  
+</body>
+
+</html>
