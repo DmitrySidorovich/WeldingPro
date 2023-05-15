@@ -15,7 +15,6 @@ function handleInputChange(event) {
   const weldingTime = secToHour(calcWeldingSec());
   console.log('Новое значение времени сварки:', weldingTime);
   result.textContent = `Время сварки: ${weldingTime}`;
-  button.style.display = 'none';
 }
 
 function calcWeldingSec() {
